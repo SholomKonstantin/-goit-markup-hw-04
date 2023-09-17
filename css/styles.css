@@ -349,6 +349,8 @@ header {
   gap: 24px;
   width: calc((100% - 48px) / 3);
   max-height: 480px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-title {
