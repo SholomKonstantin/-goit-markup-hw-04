@@ -41,6 +41,8 @@ img {
 }
 header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* HEADER */
 .header .container {
@@ -159,6 +161,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -187,6 +190,7 @@ header {
   margin: 48px auto 0;
   display: block;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   background-color: #404bbf;
@@ -208,6 +212,9 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .our-advantages-section {
@@ -316,7 +323,8 @@ header {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.traling-socials:hover {
+.traling-socials:hover,
+.traling-socials:focus {
   background-color: #404bbf;
 }
 .traling-icon {
@@ -379,6 +387,10 @@ header {
 }
 .portfolio-list-item:hover .portfolio-overlay {
   transform: translateY(0);
+}
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .overlay-text {
   color: #f4f4fd;
@@ -451,7 +463,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #404bbf;
+  background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
