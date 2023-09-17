@@ -80,7 +80,7 @@ header {
   color: #2e2f42;
 }
 .nav-link {
-  display: block;
+  display: inline-block;
   padding: 24px 0;
   color: #2e2f42;
   font-size: 16px;
@@ -88,10 +88,34 @@ header {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.nav-link:focus {
+
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
   color: #404bbf;
 }
-.nav-link:hover {
+.current:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+.nav-link:hover,
+.nav-link:focus {
   color: #404bbf;
 }
 .address-list {
